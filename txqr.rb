@@ -2,7 +2,7 @@
 
 require_relative "base43"
 
-unless ARGV[0] =~ /^([0-9a-f]{2})+$/i
+unless ARGV[0] =~ /^\h{2}+$/
   abort "usage: #{$0} hex-tx [qrencode-out [qrencode-arg...]]"
 end
 
